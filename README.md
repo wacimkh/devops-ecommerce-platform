@@ -123,6 +123,13 @@ Le cluster est monitoré avec la stack Prometheus + Grafana, déployée via Helm
 
 ---
 
+## GitOps (ArgoCD)
+
+Le déploiement est géré en GitOps avec ArgoCD : l'application est automatiquement synchronisée avec l'état décrit dans le dépôt Git. Toute modification poussée sur la branche main est déployée sans intervention manuelle, avec auto-réparation en cas de dérive.
+
+### Application ArgoCD - Synced & Healthy
+![ArgoCD Application](docs/screenshots/argocd.png)
+
 ## Structure du projet
 
 ```
